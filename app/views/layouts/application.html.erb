@@ -2,13 +2,16 @@
 <html>
   <head>
     <title>Flashcards</title>
-    <%= csrf_meta_tags %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    Флэшкарточкер
   </head>
+
+  <body>
+  <li><%= link_to "Все карточки"%></li>
+  <li><%= link_to "Добавить карточку" %></li>
+  </body>
 
   <body>
     <%= yield %>
   </body>
+
 </html>
