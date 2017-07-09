@@ -3,7 +3,13 @@
 <html>
 
   <head>
-    <title>Флэшкарточкер</title>
+    <head>
+      <title>StackOverflow</title>
+      <%= csrf_meta_tags %>
+
+      <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+      <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    </head>
   </head>
 
   <body>
@@ -11,9 +17,9 @@
 
     <header class="clearfix">
       <h1>Флэшкарточкер</h1>
-      <ul class="navigation-links">
-        <li><%= link_to "Все карточки"%></li>
-        <li><%= link_to "Добавить карточку" %></li>
+      <ul class="nav nav-pills">
+        <li><a <%= link_to "Все карточки" %></a></li>
+        <li><a <%= link_to "Добавить карточку" %></a></li>
       </ul>
     </header>
 
@@ -25,7 +31,6 @@
 
     </section>
   </body>
-
 
 </html>
 
