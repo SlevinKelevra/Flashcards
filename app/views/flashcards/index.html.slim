@@ -1,1 +1,9 @@
-h3 Первый в мире удобный менеджер флеш-карточек. Именно так.
+p
+  strong Все краточки
+  -@flashcards.each do |t|
+    p
+      = t.original_text
+      '
+      = t.translated_text
+      '
+      = t.review_date
