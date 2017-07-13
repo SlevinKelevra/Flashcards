@@ -1,9 +1,11 @@
 p
   strong Все краточки
-  -@flashcards.each do |t|
+  -@flashcards.each do |card|
     p
-      = t.original_text
+      = card.original_text
       '
-      = t.translated_text
+      = card.translated_text
       '
-      = t.review_date
+      = short_date(card.review_date)
+
+
