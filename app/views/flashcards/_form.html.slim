@@ -1,0 +1,10 @@
+= form_for(@flashcard) do |f|
+  = render 'common/errors', resource: @flashcard
+  div class="field"
+    = f.label :original_text, 'Original text'
+    = f.text_field :original_text
+  div class="field"
+    = f.label :translated_text, 'Translated text'
+    = f.text_field :translated_text
+  div class="actions"
+    = f.submit "#{@flashcard.new_record? ? 'Create' : 'Edit'}"
