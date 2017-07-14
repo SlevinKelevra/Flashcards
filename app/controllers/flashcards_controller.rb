@@ -1,5 +1,5 @@
 class FlashcardsController < ApplicationController
-  before_action :set_flashcard, only: [:show, :edit, :destroy]
+  before_action :set_flashcard, only: [:show, :edit, :update, :destroy]
 
   def index
     @flashcards = Flashcard.all
@@ -23,6 +23,14 @@ class FlashcardsController < ApplicationController
   end
 
   def edit
+  end
+
+  def update
+    if @flashcard.update(flashcard_params)
+      redirect_to @flashcard
+    else
+      render :edit
+    end
   end
 
 
