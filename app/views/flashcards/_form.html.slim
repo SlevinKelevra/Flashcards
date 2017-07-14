@@ -1,4 +1,4 @@
-= form_for(@flashcard) do |f|
+= simple_form_for @flashcard do |f|
   = render 'common/errors', resource: @flashcard
   div class="field"
     = f.label :original_text, 'Original text'
