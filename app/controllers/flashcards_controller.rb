@@ -37,7 +37,7 @@ class FlashcardsController < ApplicationController
   def destroy
     @flashcard.destroy
 
-    redirect_to flashcard_path
+    redirect_to flashcards_path
   end
 
   private
