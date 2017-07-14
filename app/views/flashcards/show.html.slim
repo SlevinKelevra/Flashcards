@@ -1,0 +1,10 @@
+p
+  strong Original text:
+  = @flashcard.original_text
+
+p
+  strong Translated text:
+  = @flashcard.translated_text
+
+= link_to 'Edit', edit_flashcard_path(@flashcard)
+= link_to 'Back', flashcards_path

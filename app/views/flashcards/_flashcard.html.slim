@@ -1,0 +1,4 @@
+tr
+  td = link_to 'Show', flashcard
+  td = link_to 'Edit', edit_flashcard_path(flashcard)
+  td = link_to 'Delete', flashcard, method: :delete, data: { confirm: 'Are you sure?' }
