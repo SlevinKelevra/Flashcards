@@ -13,5 +13,5 @@ pars_page.each do |i|
 end
 
 all_values.each do |i|
-  Flashcard.create(translated_text: i[0], translated_text: i[1])
+  Flashcard.create(original_text: i[0], translated_text: i[1])
 end
